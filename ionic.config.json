@@ -1,0 +1,8 @@
+{
+  "name": "silent_whisper",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
