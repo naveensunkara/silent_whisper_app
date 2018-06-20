@@ -14,3 +14,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.text-white{
+    color: white;
+}
+.text-shadow{
+    text-shadow: 1px 2px 4px black;
+}
+.content-md{
+    background: transparent;
+}
+ion-navbar .button-md{
+    box-shadow: none;
+    color: black;
+    border: none;
+}
+ion-header.header-md::after{
+    background: transparent;
+}
