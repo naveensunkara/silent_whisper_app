@@ -1,4 +1,14 @@
 page-login {
     background: url('/assets/imgs/bg.jpg') no-repeat;
     background-size: cover;
+    h1{
+        font-weight: bold;
+    }
+    form{
+        width: 93%;
+        margin: 25px auto 0;
+        padding: 20px 10px;
+        background: rgba(0, 0, 0, 0.278);
+        border-radius: 5px;
+    }
 }
