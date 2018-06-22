@@ -8,7 +8,7 @@ import { FirstRunPage } from '../pages';
 import { Settings } from '../providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
+  template: `<ion-menu [content]="content" [swipeEnabled]="swipe">
     <ion-header>
       <ion-toolbar>
         <ion-title>Pages</ion-title>
@@ -28,7 +28,7 @@ import { Settings } from '../providers';
 })
 export class MyApp {
   rootPage = FirstRunPage;
-
+  swipe = false;
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [

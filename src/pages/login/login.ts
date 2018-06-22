@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, ToastController, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers';
 import { MainPage } from '../';
@@ -25,8 +25,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService,
-    public viewController: ViewController) {
+    public translateService: TranslateService) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
@@ -49,7 +48,8 @@ export class LoginPage {
     });
   }
 
-  ViewDidLoad(){
-    this.viewController.setBackButtonText('Back');
+  nextPage(){
+    this.navCtrl.push('SignupPage');
   }
+
 }
